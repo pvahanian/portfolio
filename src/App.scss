@@ -1,0 +1,528 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+  padding: 0;
+  border: 0;
+  // border: 1px solid red;
+  font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Page Defaults */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+	font-size:62.5%;
+	box-sizing: border-box;
+}
+
+body{
+    font-size:1.6rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+/* Page Defaults End */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: #282c35;
+}
+
+/* lots of stuff in here with min heights based on vh, 
+most of which which are for temporary structure only and can safely be removed once the projects are added */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+
+.titlediv {
+  text-align: left;
+  font-weight: bold;
+}
+
+.titlediv h1{
+font-size: 5rem;
+font-weight: bold;
+}
+
+.titlediv h3{
+  font-size: 3rem;
+  color:rgba(59, 59, 59, 0.7)
+}
+
+.shortbio{
+  max-width: 30%;
+}
+
+.contactme{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contactme span{
+  padding:10px;
+  color:#0F61C0;
+  background-color: white;
+  border-radius: 4px;
+  transition: transform .3s;
+  border: 2px solid #0F61C0;
+}
+
+.contactme span:hover{
+  background-color:#0F61C0;
+  color: white;
+  -webkit-transition: background-color 400ms linear;
+  -ms-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
+}
+
+.bio {
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  width: 70%;
+}
+
+.divborder{
+  width: 100%;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.3);
+}
+
+.projects {
+  min-height: 100%;
+  width: 50%;
+  margin-top: 8vh;
+}
+.homegrey{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#F4F4F5;
+  width: 100vw;
+}
+
+.projects-title {
+  font-size: 3.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.project {
+  width: 100%;
+}
+.project-information{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+  text-align: left;
+}
+
+.project-information-spacer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 50vh;
+  max-width: 60%;
+}
+
+.project-information h2 {
+  font-size: 4rem;
+}
+.project-information h3 {
+  font-size: 1.7rem;
+}
+
+.description-text-outer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.description-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  align-self: center;
+  margin-bottom: 3%;
+  max-width: 80%;
+}
+
+.description-text-inner {
+
+  margin-bottom: 2rem;
+}
+
+.description-text-inner h2{
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-links a {
+  font-size: 1.6rem;
+  color: rgb(0, 117, 250);
+}
+
+
+.project-links-github {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.project-links-github img {
+  margin-left: 0.5rem;
+  }
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.greybackground{
+  background-color:#F4F4F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgcontainer{
+  width: 60%;
+  transition: transform .3s; /* Animation */
+
+//  box-shadow:2px 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+.imgcontainer:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+.githubicon{
+  width:40px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.nav-icons img:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+.nav-icons img{
+  transition: transform .2s; /* Animation */
+  max-width: 50px;
+}
+
+.logo{
+  max-width:300px;
+  margin-left: 10px;
+}
+.logo:hover{
+  cursor: pointer;
+}
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform .2s; /* Animation */
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: 3vh;
+  border-radius: 3px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 45vh;
+}
+
+.zoom-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 30vh;
+  width: 35%;
+  text-align: left;
+}
+
+.zoom-inner h2 {
+  font-size: 4rem;
+}
+
+.zoom-inner h3 {
+  font-size: 1.7rem;
+  max-width: 100%;
+  color:rgba(233, 233, 233, 0.8)
+}
+
+
+
+.purple{
+  background-color: #4A2BAF;
+}
+.lightblue{
+  background-color: #0F61C0;
+}
+.rose{
+  background-color: #9E2B79;
+}
+
+.whitetech {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  min-width: 100%;
+}
+
+
+
+.whitetech img{
+// filter:  brightness(0) invert(1)
+  
+}
+.zoom img{
+  max-width: 50%;
+}
+.zoom div{
+
+  color: white;
+  max-width: 50%;
+}
+
+.animatedimg {
+  margin-top: -3%;
+  margin-bottom: 4%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation */
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.04); 
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.technologies-container p {
+  font-weight: bold;
+  color:rgba(59, 59, 59, 0.7);
+  max-width: 100%;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.technology-icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+
+/* Animation 2 */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: .6s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedimg {
+  animation-duration: .6s;
+  animation-delay: .8s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+
+@media (max-width: 1200px) {
+  .bio{
+    width: 80%;
+    justify-content: space-between;
+    min-height: 0vh;
+  }
+  .projects{
+    width: 80%;
+    margin-top: 3vh;
+  }
+  .shortbio{
+    max-width: 50%;
+  }
+  .divborder {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .logo {
+    width: 200px;
+  }
+  .bio{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .titlediv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 100%;
+    align-items: center;
+  }
+  .shortbio{
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+    min-width: 90%;
+  }
+  .projects{
+    width: 100%;
+  }
+  .projects-title{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .zoom-inner h2{
+    font-size: 2.2rem;
+  }.zoom-inner{
+    margin-left: 2%;
+   width: 80%;
+  }
+  .zoom-inner h3{
+    font-size: 1.6rem;
+  }
+  .project-information-spacer{
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    max-height: 110vh;
+    min-height: 30vh;
+    min-width: 90%;
+  }
+  .project-information {
+    min-height: 10vh;
+  }
+.nav-icons{
+    max-width: 100%;
+}
+  .description-text h2{
+    font-size: 3rem;
+  }  
+  .description-text{
+    min-width: 100%;
+  }
+  .description-text h3{
+    font-size: 1.4rem;
+  }
+  .technologies-container p {
+    font-size: 1.3rem;
+  }
+  .technologies{
+    display: flex;
+    justify-content: center;
+  }
+  .imgcontainer{
+    width: 90%;
+  }
+  .greybackground{
+    margin-top: 4vh;
+  }
+}
