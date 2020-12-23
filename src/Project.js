@@ -1,13 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import projects from "./projectData";
 import github from "./assets/Github.svg";
 import arrow from "./assets/link-arrow.svg";
+import Title from "./assets/NewIcon2.svg";
 
 import "./App.scss";
 
 export default function Project(props) {
   let { id } = useParams();
+  let history = useHistory();
 
   console.log(projects);
   let currentPage = {};
@@ -33,8 +36,12 @@ export default function Project(props) {
               </div>
 
               <div className="project-links ">
-                <a className="project-links-github"
-                  href={currentPage.siteLink} target="_blank" rel="noreferrer">
+                <a
+                  className="project-links-github"
+                  href={currentPage.siteLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={arrow} alt="contact me arrow" />
                   <span>Visit Website</span>
                 </a>
@@ -87,6 +94,13 @@ export default function Project(props) {
           );
         })}
       </div>
+      <img
+        title="Home Page"
+        className="botlogo"
+        src={Title}
+        alt="Pablo's Logo"
+        onClick={() => history.push("/")}
+      />
     </div>
   );
 }

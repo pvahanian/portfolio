@@ -17,11 +17,10 @@ const projects = [
     'RealTime Messaging application',
     description:
     <>
-    <p>S{"</>"}acker is a chat messaging application</p>
-    <p>It was designed with the intention of learning to use backend technology <strong className="bold">Firebase</strong> and
+    <p>S{"</>"}acker s a chat messaging application that was designed with the intention of learning how to use back-end <strong className="bold">Firebase</strong> and
     <strong className="bold"> Firebase Authentication</strong></p>
     <br></br>
-    <p>It was designed and prototyped in <strong className="bold">Figma</strong>.  We wanted to create a simple application with easy Authentication</p>
+    <p>It was created and prototyped in <strong className="bold">Figma</strong>.  We wanted to create a simple application with easy Authentication</p>
     </>,
     bannerImage: sitepreview,
     images: [sitepreview,figmaslack],
@@ -38,9 +37,9 @@ const projects = [
     'Update the UX design and accessability',
     description:  
     <>
-    <p>The original concept of this design was to allow for realtime tracking of available shelter beds in the greater Portland,OR area. Unfortunately we quickly
-      learned that the wouldn't help due to shelters always being at full capacity.
-    After speaking with 211info.org we offered to improve their user experience when searching for services online.</p>
+    <p>The original concept of this design was to allow for realtime tracking of available shelter beds in the greater Portland, OR area. Unfortunately, we quickly
+      learned that wouldn't help due to shelters regularly operating at full capacity.
+    After speaking with 211info.org, we offered to improve their user experience when searching for services online.</p>
     <br></br>
     <p>The goal is to make it easier for people to find the resources they need
     before becoming homeless.
