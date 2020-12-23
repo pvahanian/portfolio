@@ -274,12 +274,12 @@ img{
 }
 .nav-icons img{
   transition: transform .2s; /* Animation */
-  max-width: 50px;
+  min-width: 55px;
 }
 
 .logo{
   max-width:300px;
-  margin-left: 10px;
+  padding-left: 20px;
 }
 .logo:hover{
   cursor: pointer;
@@ -389,8 +389,14 @@ img{
   max-width: 50px;
   max-height: 50px;
 }
+.botlogo{
+  max-width:300px;
+ padding-top:20px
+}
 
-
+.botlogo:hover{
+  cursor: pointer;
+}
 /* Animation 2 */
 
 @keyframes fadeInUp {

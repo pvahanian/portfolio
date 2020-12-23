@@ -1,6 +1,5 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-
 import projects from "./projectData";
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
       <section className="bio">
         <div className="titlediv">
           <h1>
-            Hey, I'm Pablo,<br></br>
+            Hey, I'm Pablo.<br></br>
           </h1>
           <h3>Web Developer</h3>
           <a 
@@ -35,7 +34,7 @@ export default function Home() {
         <strong className="bold"> Node.js</strong>.
         </p>
         <br></br>
-        <p>Coding is a never ending journey and I currently enjoy learning new technologies like
+        <p>Coding is a never-ending journey and I enjoy learning new technologies like
         <strong className="bold"> Firebase, Python </strong> and <strong className="bold">Next.js</strong>.  Check out my projects below. 
         </p>
         </div>
@@ -60,7 +59,6 @@ export default function Home() {
                 </div>
               </div>
               <img
-                
                 src={project.bannerImage}
                 alt={`Banner for ${project.name}`}
               />
@@ -70,6 +68,7 @@ export default function Home() {
       </section>
       </div>
       <div className="divborder"></div>
+    
     </div>
   );
 }
