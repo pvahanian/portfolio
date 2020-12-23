@@ -31,7 +31,7 @@ export default function Home() {
         </div>
 
         <div className="shortbio">
-         <p> I like to working with <strong className="bold">React, Redux, Material-UI</strong> and 
+         <p> I like working with <strong className="bold">React, Redux, Material-UI</strong> and 
         <strong className="bold"> Node.js</strong>.
         </p>
         <br></br>
