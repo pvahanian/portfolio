@@ -12,7 +12,6 @@ import ClutchMobileStats from "./assets/ClutchMobileStats.png"
 import ClutchRecording from "./assets/ClutchRecording.png"
 import ClutchVideos from "./assets/ClutchVideos.png"
 import comingSoon from "./assets/ComingSoon.png"
-import ClutchMobile from "./assets/ClutchMobile.png"
 
 
 const projects = [
