@@ -8,9 +8,9 @@ import ewb from "./assets/211.png"
 import figmamobile from "./assets/mobile211.png"
 import figmadesktop from "./assets/desktop211.png"
 import figmaslack from "./assets/figmaslack.png"
+import ClutchMobile from "./assets/ClutchMobile1.png"
 import ClutchMobileStats from "./assets/ClutchMobileStats.png"
 import ClutchRecording from "./assets/ClutchRecording.png"
-import ClutchVideos from "./assets/ClutchVideos.png"
 import comingSoon from "./assets/ComingSoon.png"
 
 
@@ -73,7 +73,7 @@ const projects = [
     <br></br><p>It was designed and prototyped in <strong className="bold">Figma</strong>.</p> 
     </>,
     bannerImage: comingSoon,
-    images: [ClutchVideos,ClutchRecording,ClutchMobileStats],
+    images: [ClutchMobile,ClutchRecording,ClutchMobileStats],
     siteLink: "https://colorlib.com/etc/cs/comingsoon_04/index.html",
     githubRepo: "https://github.com/Clutch-Network/Front-End/tree/testingbranch",
     roles: <p>Front-End</p>,
