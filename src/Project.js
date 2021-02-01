@@ -17,7 +17,6 @@ export default function Project(props) {
 
   currentPage = projects.filter((project) => {
     console.log(project.id, id);
-    // eslint-disable-next-line eqeqeq
     return parseInt(project.id) === parseInt(id);
   });
   currentPage = currentPage[0];
@@ -66,13 +65,14 @@ export default function Project(props) {
             </div>
           </div>
           <div className="technologies-container">
-            <p>Roles: {currentPage.roles} </p>
+           <h3>Roles:</h3>  <p>{currentPage.roles} </p>
             <div className="technologies">
               {currentPage.technologies.map((icon) => {
                 return (
                   <img
+                    title={icon.name}
                     className="technology-icon"
-                    src={icon}
+                    src={icon.techUsed}
                     alt={`${icon} icon`}
                   />
                 );

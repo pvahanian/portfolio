@@ -54,7 +54,7 @@ export default function Home() {
                 <h3>{project.shortDescription}</h3>
                 <div className="whitetech">
                   {project.technologies.map((tech) => {
-                    return <img src={tech} alt="technology icon" />;
+                    return <img title={tech.name} src={tech.techUsed} alt="technology icon" />;
                   })}
                 </div>
               </div>

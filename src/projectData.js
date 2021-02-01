@@ -1,7 +1,7 @@
 import sitepreview from "./assets/Slackerpreviews.png";
-import firebase from "./assets/Firebase.svg"
+import firebaseName from './assets/Firebase.svg'
+import reactName from './assets/React2svg.svg'
 import redux from "./assets/Redux.svg"
-import react from "./assets/React2svg.svg"
 import figma from "./assets/Figma.svg"
 import materialui from "./assets/MaterialUI.svg"
 import ewb from "./assets/211.png"
@@ -13,6 +13,25 @@ import ClutchMobileStats from "./assets/ClutchMobileStats.png"
 import ClutchRecording from "./assets/ClutchRecording.png"
 import comingSoon from "./assets/ComingSoon.png"
 
+const slackerTechnologyStack=[
+  {name:"Firebase",techUsed:firebaseName},
+  {name:"React",techUsed:reactName},
+  {name:"Figma",techUsed:figma},
+  {name:"Material Ui",techUsed:materialui}
+]
+const clutchTechnologyStack=[
+  {name:"Redux","techUsed":redux},
+  {name:"Firebase","techUsed":firebaseName},
+  {name:"React","techUsed":reactName},
+  {name:"Figma","techUsed":figma},
+  
+]
+const ewbTechnologyStack=[
+  {name:"Redux","techUsed":redux},
+  {name:"React","techUsed":reactName},
+  {name:"Figma","techUsed":figma},
+  {name:"Material Ui","techUsed":materialui}
+]
 
 const projects = [
   {
@@ -32,8 +51,8 @@ const projects = [
     siteLink: "https://myslackerclone.vercel.app/",
     githubRepo: "https://github.com/pvahanian/mySlackerClone",
     roles: <p>Front-End, Back-End and Designer</p>,
-    technologies: [firebase, react, figma, materialui],
-    color: "purple",
+    technologies: slackerTechnologyStack,
+    color: "grey",
   },
   {
     id: 2,
@@ -56,8 +75,8 @@ const projects = [
     siteLink: "https://elastic-engelbart-deec3b.netlify.app/",
     githubRepo: "https://github.com/ewb-psu/shelter-project",
     roles: <p>UX and Front-End</p>,
-    technologies: [redux, react, figma,materialui],
-    color: "lightblue",
+    technologies: ewbTechnologyStack,
+    color: "grey",
   },
   {
     id: 3,
@@ -77,7 +96,7 @@ const projects = [
     siteLink: "https://colorlib.com/etc/cs/comingsoon_04/index.html",
     githubRepo: "https://github.com/Clutch-Network/Front-End/tree/testingbranch",
     roles: <p>Front-End</p>,
-    technologies: [redux, react, figma,materialui,firebase],
+    technologies: clutchTechnologyStack,
     color: "grey",
   },
 ];
