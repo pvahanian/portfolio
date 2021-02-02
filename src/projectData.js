@@ -94,7 +94,7 @@ const projects = [
     bannerImage: comingSoon,
     images: [ClutchMobile,ClutchRecording,ClutchMobileStats],
     siteLink: "https://colorlib.com/etc/cs/comingsoon_04/index.html",
-    githubRepo: "https://github.com/Clutch-Network/Front-End/tree/testingbranch",
+    githubRepo: "https://github.com/pvahanian/clutchpv",
     roles: <p>Front-End</p>,
     technologies: clutchTechnologyStack,
     color: "grey",
