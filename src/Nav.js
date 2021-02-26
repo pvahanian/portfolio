@@ -4,6 +4,7 @@ import Title from "./assets/NewIcon2.svg";
 import linkedIn from "./assets/Linkedin.svg";
 import Mail from "./assets/Mail.svg";
 import Resume from "./assets/Resume.svg";
+import ResumeFile from "./assets/ResumePV.pdf";
 import "./App.scss";
 
 export default function Nav() {
@@ -35,7 +36,7 @@ export default function Nav() {
         </a>
         <a
           title="Resume"
-          href="https://registry.jsonresume.org/pvahanian"
+          href={ResumeFile}
           target="_blank"
           rel="noreferrer"
         >
